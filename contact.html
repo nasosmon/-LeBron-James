@@ -1,0 +1,39 @@
+
+	
+<html>
+	<head>
+		<title>Σελιδα Επικοινωνιας</title>
+		<meta charset="UTF-8">
+		<style>
+		body {
+			background-image: url("lebron.jpg");
+			}
+		h1 { color:FFF233; }
+		</style>
+	</head>
+		
+		<body onload='document.form1.mail.focus()' >
+			<form action="mail.php" method="post" name="form1">
+			
+			<h1>Contact info</h1>
+			<h1>First Name:</h1><input type="text" name="firstname" size="20" required   ><br>
+			<label for="lastname"><h1>Last Name:</h1></label>
+			<input type="text" id="lastname" name="lastname" size="30"  required><br>
+	<h1>Comments:</h1><label for="comment"></label><br>
+	<textarea name="comment" rows="10" cols="40"></textarea><br>
+	<h1>Email:</h1><input type="email" name="mail" placeholder="example@gmail.com" required><br>
+	<input type="submit" name="submit" value="Submit">
+	<input type="reset" name="reset" value="Reset">
+	</form>
+	<button onclick="window.location.href = 'main.html';">Main Page</button>
+	<script src="email_valid.js"></script>
+	</body>
+	</html>
+	
+	
+	
+
+	
+			
+			
+	

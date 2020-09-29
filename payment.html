@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>E-Shop</title>
+<meta charset="utf-8">
+<style>
+body {
+			background-image: url("lebron.jpg");
+			}
+h1 { font-size:80px}
+h1 { text-align:left}
+h1 { color:FFF233; }
+p { color:FFF233;  }
+p { font-size:30px}
+h2 {font-size:20px}
+h2 { color:FFF233;}
+</style>
+</head>
+<body onload='document.form1.mail.focus(); '>
+<h1> Transaction Page</h1><br><br><br>
+<form onsubmit="return confirm('Order Succesful');">
+<p>First Name:</p><input type="text" name="firstname" size="20" required   ><br>
+<label for="lastname"><p>Last Name:</p></label>
+<input type="text" id="lastname" name="lastname" size="30"  required><br>
+<p>Adress:</p><textarea name="homeaddr" required> </textarea><br>
+<p>Zip Code:</p><label for="homezip2020"></label>
+<input type="text" name="homezip" id="homezip2020" required><br>
+<p>Email:</p><input type="email" name="mail" placeholder="example@gmail.com" required><br>
+<p>Date of Birth:</p><input type="date" name="birthday">
+<table><tr><td>
+<legend><p>Payment Method</p></legend></td></tr><tr>
+<td><input type="radio" name="payment"><h2>Visa</h2></td>
+<td><input type="radio" name="payment"><h2>Mastercard</h2></td>
+<td><input type="radio" name="payment"><h2>Paypal</h2></td></tr>
+</table>
+<p>Comments:</p><label for="comment"></label><br>
+<textarea name="comment" rows="10" cols="40"></textarea><br><br>
+<input type="submit" name="submit" value="Submit">
+	<input type="reset" name="reset" value="Reset">
+</form>
+<script src="email_valid.js"></script>
+
+</body>
+</html>
+

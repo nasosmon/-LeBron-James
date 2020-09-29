@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>E-Shop</title>
+<meta charset="utf-8">
+<style>
+body {
+			background-image: url("lebron.jpg");
+			}
+h1 { font-size:60px}
+h1 { text-align:left}
+h1 { color:FFF233; }
+p { color:FFF233;  }
+p { font-size:30px}
+table { width:200px }
+</style>
+</head>
+<body>
+<h1> E-Shop</h1>
+<br><br><br>
+<table>
+<tr><td><img src="jersey1.jpg" width="300" height="300"></td><td><img src="jersey2.jpg" width="300" height="300"></td></tr>
+<tr><td><p>Price:50$</p></td><td><p>Price:70$</p></td></tr>
+</table><br>
+<form>
+<table>
+<tr><td>
+<label for="jersey1"><p>Quantity</p></label>
+<input type="number" name="jersey1" id="jersey1" min="0" required></td>
+<td><label for="jersey2"><p>Quantity</p></label>
+<input type="number" name="jersey2" id="jersey2" min="0" required></td></tr><tr><td>
+<button onclick="sum();">Submit</button></td></tr>
+</table>
+</form>
+<br><br>
+<button onclick="window.location.href = 'main.html';">Main Page</button>
+<script>
+function sum() {
+var a,b,c,q1,q2,p,txt;
+a = 50;
+b = 70;
+q1 = document.getElementById("jersey1").value;
+q2 = document.getElementById("jersey2").value;
+c = a * q1 + b * q2;
+p = confirm("The sum is" + " " + c + ".Do you wish to continue with your order?"); 
+			if (p == true) {
+				alert("Proceed to payment");
+				location="payment.html";
+				}
+				
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
